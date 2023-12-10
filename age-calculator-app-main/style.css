@@ -187,6 +187,8 @@ footer a {
 
     main {
         max-width: 800px;
+        padding: 4%;
+        margin-top: 100px;
     }
 
     #divisor {
@@ -214,6 +216,9 @@ footer a {
 
     #happy-birthday {
         max-width: 576px;
+    }
+    footer {
+        margin-bottom: 100px;
     }
 
 }
