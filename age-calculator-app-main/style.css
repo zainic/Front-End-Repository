@@ -180,6 +180,11 @@ footer a {
 }
 
 @media (min-width: 576px) {
+    body {
+        justify-content: center;
+        height: 100vh;
+    }
+
     main {
         max-width: 800px;
     }
@@ -193,8 +198,14 @@ footer a {
         justify-content:left;
     }
 
+    #born-date div {
+        margin: 0;
+        margin-right: 3%;
+    }
+
     input {
         max-width: 150px;
+        font-size: inherit;
     }
 
     #age h1 {
