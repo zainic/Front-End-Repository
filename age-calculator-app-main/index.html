@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="script.js" defer></script>
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+  <main>
+    <div id="born-date">
+      <div id="day">
+        <label for="born-day">DAY</label>
+        <input type="number" name="born-day" id="born-day" placeholder="DD">
+        <i ></i>
+      </div>
+      <div id="month">
+        <label for="born-month">MONTH</label>
+        <input type="number" name="born-month" id="born-month" placeholder="MM">
+        <i ></i>
+      </div>
+      <div id="year">
+        <label for="born-year">YEAR</label>
+        <input type="number" name="born-year" id="born-year" placeholder="YYYY">
+        <i ></i>
+      </div>
+    </div>
+    <div id="divisor">
+      <button onclick="calculate()"> 
+        <img src="./assets/images/icon-arrow.svg" alt="arrow">
+      </button>
+    </div>
+    <div id="age">
+      <h1 id="year-age"><span id="number-year">--</span>years</h1>
+      <h1 id="month-age"><span id="number-month">--</span>months</h1>
+      <h1 id="day-age"><span id="number-day">--</span>days</h1>
+    </div>
+  </main>
+  <img src="./assets/images/happy-birthday.png" id="happy-birthday"/>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.github.com/zainic">Dzaky Tamir</a>.
+    </div>
+  </footer>
+</body>
+</html>

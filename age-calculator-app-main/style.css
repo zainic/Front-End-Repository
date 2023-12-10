@@ -1,0 +1,204 @@
+html {
+    box-sizing: border-box;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 20px 20px 200px 20px;
+    width: 95%;
+}
+
+#happy-birthday {
+    text-align: center;
+    width: 0%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color:#ff5757;
+}
+
+#happy-birthday.animate {
+    animation: up-to-down 3s forwards 2 alternate;
+    animation-delay: 1s;
+}
+
+
+@keyframes up-to-down {
+    0% {
+        width: 0%;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    50%{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    90%{
+        width: 90%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    100%{
+        width: 90%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+#born-date {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#born-date i {
+    font-size: 0.3rem;
+    margin-top: 3px;
+    color: #ff5757;
+}
+
+#born-date div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+label {
+    font-size: 0.5rem;
+    letter-spacing: 3px;
+    opacity: 0.6;
+    font-family: inherit;
+} 
+
+span {
+    color: #854dff;
+    margin-right: 20px;
+}
+
+input {
+    width: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 10px;
+    border: 2px solid #dbdbdb;
+    border-radius: 10px;
+}
+
+#divisor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 30px 0;
+    position: relative;
+}
+
+#divisor::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 2px solid #dbdbdb;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+
+button {
+    max-width: max-content;
+    background-color: #854dff;
+    border: none;
+    padding: 15px;
+    border-radius: 50%; 
+    z-index: 2;
+    transition: all ease-in-out 0.25s ;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ff5757;
+}
+
+#age {
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#age h1 {
+    line-height: 1.2em;
+}
+
+.attribution {
+    font-family: system-ui;
+    margin-top: 20px;
+}
+
+.question {
+    visibility: hidden;
+}
+
+footer { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 20px 0;
+}
+    
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 576px) {
+    main {
+        max-width: 800px;
+    }
+
+    #divisor {
+        align-items: end;
+        margin: 0 10px;
+    }
+
+    #born-date {
+        justify-content:left;
+    }
+
+    input {
+        max-width: 150px;
+    }
+
+    #age h1 {
+        font-size: 2.7rem;
+    }
+
+    #happy-birthday {
+        max-width: 576px;
+    }
+
+}
